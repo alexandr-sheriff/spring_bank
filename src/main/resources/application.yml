@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database: postgresql
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: update
+    properties:
+    show-sql: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/spring_bank
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
